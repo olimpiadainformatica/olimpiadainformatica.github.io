@@ -1,0 +1,68 @@
+header{
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    min-height: 50px;
+    background-color: var(--header_color);
+    display: flex;
+    font-size: 110%;
+    z-index: 999;
+}
+
+header a{
+    color: #000000;
+}
+
+header #organization_name{
+    margin: 0 0 0 60px;
+    align-self: center;
+}
+
+header #organization_name img{
+    width: 20px;
+    height: 15px;
+}
+
+header navbar{
+    font-size: 90%;
+    margin: 0 0 0 auto;
+    align-self: center;
+}
+
+header navbar a{
+    margin: 0 50px 0 50px;
+}
+
+header navbar a:hover, footer a:hover{
+    color: #666;
+    transition-duration: 0.2s;
+}
+
+header navbar #login_btn{
+    color: #EEEEEE;
+    background-color: var(--blue);
+    padding: 5px 20px 5px 20px;
+    border-radius: 20px;
+    
+}
+
+header navbar #login_btn:hover{
+    background-color: var(--blue_hover);
+    transition-duration: 0.2s
+}
+
+footer{
+    position: relative;
+    width: 100%;
+    margin: 5% 0 0 0;
+    background-color: var(--header_color);
+    height: 10px;
+    min-height: 50px;
+    color: #000000;
+    z-index: 998;
+    text-align: center;
+}
+
+footer a{
+    color: #000000
+}

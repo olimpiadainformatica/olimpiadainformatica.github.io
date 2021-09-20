@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+@font-face {
+    font-family: "Sansation";
+    src: url("../fonts/Sansation-Regular.ttf");
+}
+
+:root{ 
+    --header_color:#B8C1EC;
+    --blue:#2A3464;
+    --blue_hover:#404c86;
+    --light_blue:#E4E8FA;
+    --cyan:#245A5E;
+}
+
+body{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+    margin: 0;
+    background-color: #FFFFFF;
+    width: 100%;
+    padding: 0;
+    color: #444444;
+    overflow-x: hidden;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr auto;
+}
+
+a{text-decoration: none; color: #444444}
+
+header{font-family: 'Sansation', sans-serif;}
+footer{font-family: 'Sansation', sans-serif;}
+
+h1{font-family: 'Poiret One', cursive; font-size: 400%; font-weight: lighter;}
+h2{font-size: 200%; font-weight: lighter;}
+
+main{
+    margin-top: 60px;
+}
+
+@media (max-width: 1000px){
+    *{font-size: 1.6vw;}
+}
