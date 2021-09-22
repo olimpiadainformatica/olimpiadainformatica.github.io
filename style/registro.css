@@ -1,0 +1,135 @@
+h1{
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    background-color: var(--light_blue);
+    font-size: 300%;
+    padding: 10px;
+    width: 50%;
+    margin: 50px auto 50px auto;
+    max-width: 1200px;
+}
+
+#form_container{
+    position: relative;
+    width: 50%;
+    font-family: 'Quicksand', sans-serif;
+    background-color: var(--light_blue);
+    margin: auto;
+    max-width: 1200px;
+}
+
+#register_form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(9, 0.8fr);
+    column-gap: 50px;
+    padding: 0 40px 0 40px;
+}
+
+.form_section_title{
+    font-size: 150%;
+    position: relative;
+    width: fit-content;
+    margin: 20px auto 20px auto;
+    text-align: center;
+    z-index: 2;
+    background-color: var(--light_blue); 
+}
+
+.form_section_title_bar{
+    position: relative;
+    display: block;
+    text-align: center;
+    margin: 0 auto 0 auto;
+    width: 90%;
+    height: 1px;
+    background-color: black;
+    bottom: 35px;
+    z-index: 1;
+}
+
+.form_field_container{
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    margin: auto;
+    width: 100%;
+}
+
+.form_field{
+    display: block;
+    height: 50px;
+    width: 100%;
+    margin: 0;
+    font-size: 100%;
+    padding: 10px 0 10px 0;
+    border: 1px solid #AAAAAA;
+    border-left: 0px solid #AAAAAA;
+    border-radius: 0 50px 50px 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.form_field:focus{
+    border-radius: 0px;
+}
+
+.form_field_icon{
+    display: block;
+    height: 50px;
+    width: 50px;
+    margin: 0;
+    padding: 15px 0 15px 15px;
+    border: 1px solid #AAAAAA;
+    border-right: 0px solid #AAAAAA;
+    border-radius: 50px 0 0 50px;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+#toe_field_container{
+    display: flex;
+    margin: 30px 0 30px 0;
+}
+
+#toe{
+    margin: 5px;
+    height: 1em;
+    width: 1em;
+    display: inline-block;
+}
+
+#toe:checked{
+    display: block;
+}
+
+#register_btn{
+    display: block;
+    margin: auto;
+    width: 70%;
+    font-size: 130%;
+    height: 40px;
+    color: #EEEEEE;
+    background-color: var(--blue);
+    border: 0px;
+    padding: 5px 20px 5px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: 'Quicksand', sans-serif;
+}
+
+#register_btn:hover{
+    background-color: var(--blue_hover);
+    transition-duration: 0.2s
+}
+
+#submit_alert{
+    position: absolute;
+    text-align: center;
+    color: red;
+    bottom: 15px;
+    left: 0px;
+    right: 0px;
+    display: none;
+}
