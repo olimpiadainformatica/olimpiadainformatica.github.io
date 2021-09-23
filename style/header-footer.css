@@ -13,12 +13,12 @@ header a{
     color: #000000;
 }
 
-header #organization_name{
+header #header_organization_name{
     margin: 0 0 0 60px;
     align-self: center;
 }
 
-header #organization_name img{
+header #header_organization_name img{
     width: 20px;
     height: 15px;
 }
@@ -38,14 +38,14 @@ header navbar a:hover, footer a:hover{
     transition-duration: 0.2s;
 }
 
-header navbar #login_btn{
+header navbar #header_login_btn{
     color: #EEEEEE;
     background-color: var(--blue);
     padding: 5px 20px 5px 20px;
     border-radius: 20px;
 }
 
-header navbar #login_btn:hover{
+header navbar #header_login_btn:hover{
     background-color: var(--blue_hover);
     transition-duration: 0.2s
 }

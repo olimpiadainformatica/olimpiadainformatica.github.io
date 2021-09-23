@@ -65,7 +65,7 @@ h1{
     padding: 10px 0 10px 0;
     border: 1px solid #AAAAAA;
     border-left: 0px solid #AAAAAA;
-    border-radius: 0 50px 50px 0;
+    border-radius: 0 20px 20px 0;
     box-sizing: border-box;
     font-family: 'Quicksand', sans-serif;
 }
@@ -82,7 +82,7 @@ h1{
     padding: 15px 0 15px 15px;
     border: 1px solid #AAAAAA;
     border-right: 0px solid #AAAAAA;
-    border-radius: 50px 0 0 50px;
+    border-radius: 20px 0 0 20px;
     box-sizing: border-box;
     background-color: white;
 }
