@@ -35,32 +35,32 @@ function changePicture(){
                 
                 switch(pictureNumber){
                     case 0: 
-                        pictureDisplay.style.background = 'url("src/slider/contacto_slider.svg") no-repeat center center';
+                        pictureDisplay.style.background = 'url("src/illustrations/contacto_slider.svg") no-repeat center center';
                         pictureDisplay.style.backgroundSize = '80% auto'; 
                         pictureDisplay.innerHTML = "CONTACTO MÉDICO";
                     break;
                     case 1: 
-                        pictureDisplay.style.background = 'url("src/slider/datos_clinicos_slider.jpg") no-repeat center center';
+                        pictureDisplay.style.background = 'url("src/illustrations/datos_clinicos_slider.jpg") no-repeat center center';
                         pictureDisplay.style.backgroundSize = '80% auto'; 
                         pictureDisplay.innerHTML = "DATOS CLÍNICOS";
                     break;
                     case 2: 
-                        pictureDisplay.style.background = 'url("src/slider/estadisticas_slider.svg") no-repeat center center';
+                        pictureDisplay.style.background = 'url("src/illustrations/estadisticas_slider.svg") no-repeat center center';
                         pictureDisplay.style.backgroundSize = '80% auto';
                         pictureDisplay.innerHTML = "COVID-19 ESTADÍSTICAS";
                     break;
                     case 3: 
-                        pictureDisplay.style.background = 'url("src/slider/estilo_vida_slider.jpg") no-repeat center center';
+                        pictureDisplay.style.background = 'url("src/illustrations/estilo_vida_slider.jpg") no-repeat center center';
                         pictureDisplay.style.backgroundSize = '80% auto';
                         pictureDisplay.innerHTML = "ESTILO DE VIDA";
                     break;
                     case 4: 
-                        pictureDisplay.style.background = 'url("src/slider/protocolos_slider.jpg") no-repeat center center';
+                        pictureDisplay.style.background = 'url("src/illustrations/protocolos_slider.jpg") no-repeat center center';
                         pictureDisplay.style.backgroundSize = '80% auto';
                         pictureDisplay.innerHTML = "PROTOCOLOS ACTUALES"
                     break;
                     case 5: 
-                        pictureDisplay.style.background = 'url("src/slider/tipos_enfermedades_slider.jpg") no-repeat center center';
+                        pictureDisplay.style.background = 'url("src/illustrations/tipos_enfermedades_slider.jpg") no-repeat center center';
                         pictureDisplay.style.backgroundSize = '80% auto';
                         pictureDisplay.innerHTML = "TIPOS DE ENFERMEDADES"
                     break;

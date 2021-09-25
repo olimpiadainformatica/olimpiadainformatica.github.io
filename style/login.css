@@ -151,7 +151,7 @@ main{
     height: 100%;
     align-self: center;
     position: absolute;
-    background: url("../src/slider/contacto_slider.svg") no-repeat center center;
+    background: url("../src/illustrations/contacto_slider.svg") no-repeat center center;
     background-size: 80% auto;
     opacity: 1;
     text-align: center;
