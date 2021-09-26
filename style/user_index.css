@@ -19,6 +19,7 @@ h1{
 #info_text img{
     width: 25px;
     height: auto;
+    margin-right: 5px;
 }
 
 #sections_container{

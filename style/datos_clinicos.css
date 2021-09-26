@@ -1,0 +1,83 @@
+main{
+    width: 80%;
+    margin: 80px auto 0 auto;
+}
+
+#info_text{
+    display: flex;
+    width: 100%;
+    margin: 0 auto 20px auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#title_img{
+    display: flex;
+    width: fit-content;
+    text-align: center;
+}
+
+#title_img img{
+    width: 80px;
+    height: auto;
+    align-self: center;
+}
+
+#title_img h2{
+    font-family: 'Poiret One', cursive;
+    font-weight: bold;
+    margin: 0 0 0 0px;
+    align-self: center;
+    width: 150px;
+}
+
+#info_img{
+    display: flex;
+}
+
+#info_img img{
+    width: 25px;
+    height: auto;
+    margin-right: 5px;
+}
+
+#sections_container{
+    display: grid;
+    width: fit-content;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 40px 20px;
+    padding: 20px;
+    margin: 0 auto 0 auto;
+    justify-content: space-between;
+}
+
+.item_container{
+    border-radius: 15px;
+    box-sizing: border-box;
+    width: fit-content;
+    padding: 10px 30px 10px 30px;
+    height: 100%;
+    background-color: var(--header_color);
+    align-self: center;
+    cursor: pointer;
+    box-shadow: 0px 4px 5px rgba(0,0,0,0.3);
+}
+
+.item_container:hover{
+    background-color: #a5b1f1;
+    transition-duration: 0.2s;
+}
+
+.item_container img{
+    width: 80px;
+    height: auto;
+    padding: 10px 70px 0 70px;
+}
+
+.item_container p{
+    font-weight: bold;
+    text-align: center;
+    padding: 0;
+    margin: 0 0 10px 0;
+}
