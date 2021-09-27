@@ -1,0 +1,43 @@
+main{
+    width: 80%;
+    margin: 60px auto 0 auto;
+}
+
+#info_text{
+    display: flex;
+    width: 100%;
+    margin: 0 auto 20px 0;
+    align-items: center;
+}
+
+#info_text img{
+    width: 80px;
+    height: auto;
+}
+
+#info_text p{
+    width: 100%;
+    background-color: var(--light_blue);
+    padding: 20px;
+    margin: 20px 10% 0 15px;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+#about_text{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 80%;
+    margin: 0 auto 0 auto;
+    font-size: 120%;
+}
+
+#about_text p{
+    margin-top: 100px;
+}
+
+#about_text img{
+    align-self: center;
+    width: 100%;
+    height: auto;
+}
