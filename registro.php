@@ -1,3 +1,51 @@
+<?php
+    include 'conexion.php';
+
+    function buscar_dni_repetido($dni,$conexion){
+        $sql="SELECT * FROM usuario WHERE dni=$dni;";
+        $sel = $conexion -> query($sql);
+
+        if(mysqli_num_rows($sel)>=1){
+            return 1;
+        }else{
+            return 0;
+        }
+    }
+
+    if(isset($_POST['nombre'])){
+        $nombre=$_POST['nombre'];
+        $apellido=$_POST['apellido'];
+        $email=$_POST['email'];
+        $dni=$_POST['dni'];
+        $pass=md5($_POST['contraseña']);
+
+        if(buscar_dni_repetido($dni,$con)==0){
+            $consulta = "INSERT INTO `usuario` (
+                `id_u` ,
+                `nombre` ,
+                `apellido` ,
+                `dni` ,
+                `password` ,
+                `correo` ,
+                `edad` ,
+                `sexo`
+                )
+                VALUES (
+                NULL , '$nombre', '$apellido', $dni, '$pass', '$email', NULL , NULL
+                );";
+            $ins = $con -> query($consulta);
+            if($ins){
+                header("location:login.html");
+            }else{
+                echo('<script language="javascript">alert("Ha ocurrido un error en el registro!!");window.location.href="registro.php"</script>');
+            }
+        }else{
+            echo('<script language="javascript">alert("El DNI ingresado ya existe, Por favor Ingrese otro.")</script>');
+        }
+        
+    }
+?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -19,7 +67,7 @@
         <main>
             <h1 class="container1">Registro de usuario</h1>
             <div id="form_container" class="container1">
-                <form id="register_form">
+                <form id="register_form" method="post">
                     <div style="grid-column: 1/3">
                         <h2 class="form_section_title">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Información Personal&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h2>
                         <span class="form_section_title_bar">&nbsp;</span>
@@ -33,7 +81,7 @@
                         <label for="surname"><img src="src/inputicons/user_icon.svg" class="form_field_icon"></label>
                     </div>
                     <div class="form_field_container" style="grid-column: 1/3">
-                        <input id="email" type="email" name="email" placeholder="Correo electrónico" class="form_field" required>
+                        <input id="email" type="email" name="email" placeholder="Correo electrónico" class="form_field" <?php if(!empty($_POST['register_email'])){$email=$_POST['register_email'];echo("value='$email'");} ?> required>
                         <label for="email"><img src="src/inputicons/email_icon.svg" class="form_field_icon"></label>
                     </div>
                     <div class="form_field_container" style="grid-column: 1/3">
