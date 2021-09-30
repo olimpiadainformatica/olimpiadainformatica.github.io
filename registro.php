@@ -40,7 +40,7 @@
                 echo('<script language="javascript">alert("Ha ocurrido un error en el registro!!");window.location.href="registro.php"</script>');
             }
         }else{
-            echo('<script language="javascript">alert("El DNI ingresado ya existe, Por favor Ingrese otro.")</script>');
+            echo('<script language="javascript">alert("El DNI ingresado ya existe, por favor Ingrese otro.")</script>');
         }
         
     }
@@ -67,21 +67,21 @@
         <main>
             <h1 class="container1">Registro de usuario</h1>
             <div id="form_container" class="container1">
-                <form id="register_form" method="post">
+                <form id="register_form" method="post" action="#">
                     <div style="grid-column: 1/3">
                         <h2 class="form_section_title">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Información Personal&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h2>
                         <span class="form_section_title_bar">&nbsp;</span>
                     </div>
                     <div class="form_field_container">
-                        <input id="name" type="text" name="nombre" placeholder="Nombre" class="form_field" required>
+                        <input id="name" type="text" name="nombre" placeholder='Nombre' class="form_field" <?php if(isset($_POST['nombre'])) echo("value='$nombre'"); ?> required>
                         <label for="name"><img src="src/inputicons/user_icon.svg" class="form_field_icon"></label>
                     </div>
                     <div class="form_field_container">
-                        <input id="surname" type="text" name="apellido" placeholder="Apellido" class="form_field" required>
+                        <input id="surname" type="text" name="apellido" placeholder="Apellido" class="form_field" <?php if(isset($_POST['apellido'])) echo("value='$nombre'"); ?> required>
                         <label for="surname"><img src="src/inputicons/user_icon.svg" class="form_field_icon"></label>
                     </div>
                     <div class="form_field_container" style="grid-column: 1/3">
-                        <input id="email" type="email" name="email" placeholder="Correo electrónico" class="form_field" <?php if(!empty($_POST['register_email'])){$email=$_POST['register_email'];echo("value='$email'");} ?> required>
+                        <input id="email" type="email" name="email" placeholder="Correo electrónico" class="form_field" <?php if(isset($_POST['email'])) echo("value='$email'"); ?> required>
                         <label for="email"><img src="src/inputicons/email_icon.svg" class="form_field_icon"></label>
                     </div>
                     <div class="form_field_container" style="grid-column: 1/3">
@@ -94,7 +94,7 @@
                         <span class="form_section_title_bar">&nbsp;</span>
                     </div>
                     <div class="form_field_container">
-                        <input id="password" type="password" name="contraseña" placeholder="Contraseña" class="form_field" pattern=".{8,}" required>
+                        <input id="password" type="password" name="contraseña" placeholder="Contraseña" class="form_field" required>
                         <label for="password"><img src="src/inputicons/password_icon.svg" class="form_field_icon"></label>
                     </div>
                     <div class="form_field_container">

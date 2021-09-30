@@ -51,7 +51,14 @@ h1{
 .item_container:hover{
     background-color: rgba(0, 0, 0, 0.1);
     transition-duration: 0.2s;
-    box-shadow: inset 0px 12px 0px rgba(0, 56, 255, 0.5);
+    box-shadow: inset 0px 8px 0px rgba(0, 56, 255, 0.5);
+    
+}
+
+.item_container:hover img{
+    transform: rotateZ(-5deg);
+    transition-duration: 0.2s;
+    transition-timing-function: ease-out;
 }
 
 .item_container img{

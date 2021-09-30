@@ -48,7 +48,7 @@ newElement = document.createElement('p');
 newElement.innerHTML = "Copyright © 2021 Todos los derechos reservados | ";
 
 newElementInner = document.createElement('a');
-newElementInner.href = "#";
+newElementInner.href = "politics.html";
 newElementInner.innerHTML = "Políticas de servicio";
 
 newElement.appendChild(newElementInner);

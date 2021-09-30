@@ -45,7 +45,7 @@ main{
     display: grid;
     width: fit-content;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     gap: 40px 20px;
     padding: 20px;
     margin: 0 auto 0 auto;

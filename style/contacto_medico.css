@@ -1,0 +1,65 @@
+main{
+    width: 80%;
+    margin: 60px auto 0 auto;
+}
+
+#info_text{
+    display: flex;
+    width: 100%;
+    margin: 20px auto 20px auto;
+    align-items: center;
+}
+
+#info_text img{
+    width: 80px;
+    height: auto;
+}
+
+#info_text h2{
+    font-family: 'Sansation', sans-serif;
+    display: block;
+    width: 100%;
+    margin: 0 10% 0 0;
+    text-align: center;
+    align-self: center;
+}
+
+#about_text{
+    width: 60%;
+    margin: 0 auto 0 auto;
+}
+
+#about_text li{
+    font-size: 120%;
+    margin-bottom: 10px;
+}
+
+#socials{
+    width: 60%;
+    margin: 50px auto 0 auto;
+}
+
+#socials p{
+    background-color: var(--light_blue);
+    text-align: center;
+    font-size: 150%;
+    border-radius: 25px;
+    box-shadow: inset 0px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+#socials_links{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 50%;
+    margin: auto;
+}
+
+#socials_links a{
+    margin: 0 auto 0 auto;
+}
+
+#socials_links a img{
+    width: 50px;
+    height: auto;
+    margin: 0;
+}
