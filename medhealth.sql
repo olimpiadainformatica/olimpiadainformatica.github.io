@@ -12,13 +12,6 @@ CREATE TABLE IF NOT EXISTS usuario(
     PRIMARY KEY(id_u)
 )ENGINE=InnoDB;
 
-CREATE TABLE IF NOT EXISTS usuario_vacuna(
-    id_u1 int,
-    id_v1 int,
-    FOREIGN KEY(id_u1) REFERENCES usuario(id_u),
-    FOREIGN KEY(id_v1) REFERENCES vacuna(id_v)
-)ENGINE=InnoDB;
-
 CREATE TABLE IF NOT EXISTS u_direccion(
     id_direccion int not null AUTO_INCREMENT,
     calle_numero varchar(255),
