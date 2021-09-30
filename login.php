@@ -34,19 +34,19 @@
                             <!-- SCRIPT TEMPORAL PARA IR A LA PÁGINA DE INICIO DE USUARIO-->
                             <script>
                                 function loginSubmit(){
-                                    window.location.href = "user_index.html";
+                                    window.location.href = "user_index.php";
                                 }
                             </script>
                             <!-- SCRIPT TEMPORAL PARA IR A LA PÁGINA DE INICIO DE USUARIO-->
                         </div>
                         <div>
-                            <a id="recover_btn" href="recuperar.html">RECUPERAR CONTRASEÑA</a>
+                            <a id="recover_btn" href="recuperar.php">RECUPERAR CONTRASEÑA</a>
                         </div>
                     </form>
                 </div>
                 <p style="text-align: center;">Si todavía no tiene una cuenta, presione el botón “Registrarme”</p>
                 <div>
-                    <a id="register_btn" href="registro.html">REGISTRARME</a>
+                    <a id="register_btn" href="registro.php">REGISTRARME</a>
                 </div>
             </section>
             <span id="vertical_line"></span>

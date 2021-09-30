@@ -22,19 +22,19 @@
                 <p>Haga clic en una sección para ver más información</p>
             </div>
             <div class="container1" id="sections_container">
-                <a class="item_container" href="datos_clinicos.html">
+                <a class="item_container" href="datos_clinicos.php">
                     <img src="src/icons/clinicaldata_icon.svg" alt="">
                     <p>Datos Clínicos</p>
                 </a>
-                <a class="item_container" href="estadisticas.html">
+                <a class="item_container" href="estadisticas.php">
                     <img src="src/icons/covidstatistics_icon.svg" alt="">
                     <p>Covid-19 Estadísticas</p>
                 </a>
-                <a class="item_container" href="protocolos.html">
+                <a class="item_container" href="protocolos.php">
                     <img src="src/icons/protocols_icon.svg" alt="">
                     <p>Protocolos Actuales</p>
                 </a>
-                <a class="item_container" href="estilo_vida.html">
+                <a class="item_container" href="estilo_vida.php">
                     <img src="src/icons/lifestyle_icon.svg" alt="">
                     <p>Estilo de Vida</p>
                 </a>
@@ -42,7 +42,7 @@
                     <img src="src/icons/diseases_icon.svg" alt="">
                     <p>Tipos de Enfermedades</p>
                 </a>
-                <a class="item_container" href="contacto_medico.html">
+                <a class="item_container" href="contacto_medico.php">
                     <img src="src/icons/contact_icon.svg" alt="">
                     <p>Contacto Médico</p>
                 </a>

@@ -27,11 +27,11 @@
             </div>
 
             <div id="sections_container">
-                <a class="item_container" href="datos_clinicos_informacion.html"">
+                <a class="item_container" href="datos_clinicos_informacion.php">
                     <img src="src/clinicaldata/about.svg" alt="">
                     <p>Acerca de</p>
                 </a>
-                <a class="item_container" href="datos_clinicos_datos.html">
+                <a class="item_container" href="datos_clinicos_datos.php">
                     <img src="src/clinicaldata/clinichistory.svg" alt="">
                     <p>Datos</p>
                 </a>
