@@ -7,16 +7,9 @@ CREATE TABLE IF NOT EXISTS usuario(
     correo varchar(100) not null,
     edad int,
     sexo varchar(30),
+    f_nacimiento date,
+    n_s_social int,
     PRIMARY KEY(id_u)
-)ENGINE=InnoDB;
-
-
-CREATE TABLE IF NOT EXISTS vacuna(
-    id_v int not null AUTO_INCREMENT,
-    nombre_v varchar(100) not null,
-    fecha_aplicada date,
-    descripcion_v varchar(255),
-    PRIMARY KEY(id_v)
 )ENGINE=InnoDB;
 
 CREATE TABLE IF NOT EXISTS usuario_vacuna(
@@ -26,42 +19,30 @@ CREATE TABLE IF NOT EXISTS usuario_vacuna(
     FOREIGN KEY(id_v1) REFERENCES vacuna(id_v)
 )ENGINE=InnoDB;
 
-CREATE TABLE IF NOT EXISTS medico(
-    id_medico int not null AUTO_INCREMENT,
-    nombre_m varchar(30) not null,
-    apellido_m varchar(30) not null,
-    especialidad varchar(255) not null,
-    cargo varchar(255),
-    telefono int,
-    dni_m int(8),
-    PRIMARY KEY(id_medico)
-)ENGINE=InnoDB;
-
-CREATE TABLE IF NOT EXISTS h_medica(
-    id_h int not null AUTO_INCREMENT,
-    fecha_entrada date not null,
-    fecha_salida date not null,
-    comentario varchar(255),
-    dni_h int(8),
-    PRIMARY KEY(id_h)
+CREATE TABLE IF NOT EXISTS u_direccion(
+    id_direccion int not null AUTO_INCREMENT,
+    calle_numero varchar(255),
+    localidad varchar(50),
+    codigo_postal int(4),
+    provincia varchar(50),
+    dni_dir int(8),
+    PRIMARY KEY(id_direccion)
 )ENGINE=InnoDB;
 
 CREATE TABLE IF NOT EXISTS diario_paciente(
     id_diario int not null AUTO_INCREMENT,
-    fecha_visita date not null,
-    motivo_visita varchar(255) not null,
     tipo_enfermedad varchar(255) not null,
-    tratamiento varchar(255),
-    diagnostico varchar(255),
+    notas varchar(255),
     dni_d int(8),
     PRIMARY KEY(id_diario)
 )ENGINE=InnoDB;
 
-CREATE TABLE IF NOT EXISTS enfermedad(
-    id_e int not null AUTO_INCREMENT,
-    tipo_e varchar(200) not null,
-    e_especifico varchar(200) not null,
-    e_descripcion varchar(255),
-    dni_e int(8),
-    PRIMARY KEY(id_e)
+CREATE TABLE IF NOT EXISTS consulta(
+    id_con int not null AUTO_INCREMENT,
+    fecha date,
+    motivo varchar(255),
+    especialidad varchar(100),
+    id_diario1 int,
+    PRIMARY KEY(id_con),
+    FOREIGN KEY(id_diario1) REFERENCES diario_paciente(id_diario)
 )ENGINE=InnoDB;
