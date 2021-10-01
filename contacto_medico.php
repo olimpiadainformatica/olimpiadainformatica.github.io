@@ -1,3 +1,14 @@
+<?php
+    include 'conexion.php';
+    include 'header.php';
+    session_start();
+    $varsesion= $_SESSION['dni_logeado'];
+
+    if($varsesion == null || $varsesion = ''){
+        header("location:login.php");
+    }
+
+?>
 <!DOCTYPE html>
 <html>
     <head>
