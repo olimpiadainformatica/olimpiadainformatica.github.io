@@ -1,0 +1,141 @@
+main{
+    display: grid;
+    grid-column: 1fr;
+    grid-row: 1fr;
+    width: 80%;
+    min-height: 100vh;
+    margin: 20vw auto 10vw auto; 
+    align-items: center;
+}
+
+h1{
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    background-color: var(--light_blue);
+    padding: 2vw;
+    font-size: 120%;
+    width: 100%;
+    margin: 2vw auto 5vw auto;
+}
+
+#form_container{
+    position: relative;
+    width: 100%;
+    font-family: 'Quicksand', sans-serif;
+    background-color: var(--light_blue);
+    margin: auto;
+}
+
+#register_form{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(9, 0.5fr);
+    column-gap: 5vw;
+    padding: 0 4vw 0 4vw;
+}
+
+.form_section_title{
+    font-size: 100%;
+    position: relative;
+    width: fit-content;
+    margin: 8vw auto 8vw auto;
+    text-align: center;
+    z-index: 2;
+    background-color: var(--light_blue); 
+}
+
+.form_section_title_bar{
+    position: relative;
+    display: block;
+    text-align: center;
+    margin: 0 auto 0 auto;
+    width: 90%;
+    height: 0.1vw;
+    background-color: black;
+    bottom: 10.5vw;
+    z-index: 1;
+}
+
+.form_field_container{
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    margin: auto;
+    width: 100%;
+}
+
+.form_field{
+    display: block;
+    height: 10vw;
+    width: 100%;
+    margin: 0;
+    font-size: 100%;
+    padding: 2.5vw 0 2.5vw 0;
+    border: 0.1vw solid #AAAAAA;
+    border-left: 0 solid #AAAAAA;
+    border-radius: 0 5vw 5vw 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.form_field:focus{
+    border-radius: 0px;
+}
+
+.form_field_icon{
+    display: block;
+    height: 10vw;
+    width: 10vw;
+    margin: 0;
+    padding: 2.5vw 0 2.5vw 2.5vw;
+    border: 0.1vw solid #AAAAAA;
+    border-right: 0 solid #AAAAAA;
+    border-radius: 5vw 0 0 5vw;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+#toe_field_container{
+    display: flex;
+    margin: 6vw 0 6vw 0;
+}
+
+#toe{
+    margin: 0 1vw auto 0;
+    height: 6vw;
+    width: 8vw;
+    display: inline-block;
+}
+
+#toe:checked{
+    display: block;
+}
+
+#register_btn{
+    display: block;
+    width: 80%;
+    font-size: 100%;
+    text-align: center;
+    color: #EEEEEE;
+    background-color: var(--blue);
+    margin: 0 auto 0 auto;
+    padding: 1vw 2vw 1vw 2vw;
+    border-radius: 5vw;
+    text-decoration: none;
+    font-family: 'Quicksand', sans-serif;
+}
+
+#register_btn:hover{
+    background-color: var(--blue_hover);
+    transition-duration: 0.2s
+}
+
+#submit_alert{
+    position: absolute;
+    text-align: center;
+    color: red;
+    bottom: 1vw;
+    left: 0px;
+    right: 0px;
+    display: none;
+}
