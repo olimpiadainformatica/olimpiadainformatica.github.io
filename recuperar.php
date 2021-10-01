@@ -1,3 +1,6 @@
+<?php
+    include 'header.php';
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -15,7 +18,7 @@
         <script src="scripts/slider.js" async defer></script>
         <script src="scripts/recover.js" async defer></script>
 
-        <header></header>
+        <?php $header=header_paginas(); echo($header); ?>
 
         <main>
             <section id="recover_section">

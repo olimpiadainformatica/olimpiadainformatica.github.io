@@ -1,3 +1,10 @@
+<?php
+    include 'header.php';
+    session_start();
+    if (isset($_SESSION['dni_logeado'])) {
+        header('Location:user_index.php');
+    }
+?>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -13,7 +20,7 @@
 	</head>
 	<body>
         
-        <header></header>
+        <?php $header=header_paginas(); echo($header); ?>
         
         <main>
             <div id="index_text">
@@ -21,7 +28,7 @@
                 <h2>Un compromiso con la vida</h2>
                 <p>MedHealth facilita el seguimiento clínico de cada paciente, y la interacción online con profesionales de la salud.</p>
                 <form action="registro.php" method="post">
-                    <input type="email" id="index_email_field" name="register_email" placeholder="Introduce tu email" value="email">
+                    <input type="email" id="index_email_field" name="register_email" placeholder="Introduce tu email">
                     <button type="submit">REGISTRO</button>
                 </form>
             </div>

@@ -1,3 +1,14 @@
+<?php
+    include 'conexion.php';
+    include 'header.php';
+    session_start();
+    $varsesion= $_SESSION['dni_logeado'];
+
+    if($varsesion == null || $varsesion = ''){
+        header("location:login.php");
+    }
+
+?>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -13,10 +24,10 @@
 	</head>
 	<body>
 
-        <header logged></header>
+        <?php $dni = $_SESSION['dni_logeado']; $header=header_paginas($dni,$con); echo($header[0]); ?>
 
         <main>
-            <h1>Bienvenido (nombreDeUsuario)</h1>
+            <h1>Bienvenido <?php echo($header[1]); ?></h1>
             <div id="info_text">
                 <img src="src/icons/info_icon.svg" alt="">
                 <p>Haga clic en una sección para ver más información</p>

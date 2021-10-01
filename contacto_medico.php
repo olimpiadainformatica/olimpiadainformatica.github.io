@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="style/contacto_medico.css">
     </head>
     <body>
-        <header logged></header>
+        <?php $dni = $_SESSION['dni_logeado']; $header=header_paginas($dni,$con); echo($header[0]); ?>
 
         <main>
             <div id="info_text">

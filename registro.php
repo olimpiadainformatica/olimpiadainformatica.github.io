@@ -1,5 +1,10 @@
 <?php
     include 'conexion.php';
+    include 'header.php';
+    session_start();
+    if (isset($_SESSION['dni_logeado'])) {
+        header('Location:user_index.php');
+    }
 
     function buscar_dni_repetido($dni,$conexion){
         $sql="SELECT * FROM usuario WHERE dni=$dni;";
@@ -26,16 +31,14 @@
                 `apellido` ,
                 `dni` ,
                 `password` ,
-                `correo` ,
-                `edad` ,
-                `sexo`
+                `correo`
                 )
                 VALUES (
-                NULL , '$nombre', '$apellido', $dni, '$pass', '$email', NULL , NULL
+                NULL , '$nombre', '$apellido', $dni, '$pass', '$email'
                 );";
             $ins = $con -> query($consulta);
             if($ins){
-                header("location:login.html");
+                header("location:login.php");
             }else{
                 echo('<script language="javascript">alert("Ha ocurrido un error en el registro!!");window.location.href="registro.php"</script>');
             }
@@ -62,12 +65,12 @@
     <body>
         <script src="scripts/registro.js" async defer></script>
 
-        <header></header>
+        <?php $header=header_paginas(); echo($header); ?>
 
         <main>
             <h1 class="container1">Registro de usuario</h1>
             <div id="form_container" class="container1">
-                <form id="register_form" method="post" action="#">
+                <form id="register_form" method="post">
                     <div style="grid-column: 1/3">
                         <h2 class="form_section_title">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Información Personal&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h2>
                         <span class="form_section_title_bar">&nbsp;</span>
@@ -81,7 +84,7 @@
                         <label for="surname"><img src="src/inputicons/user_icon.svg" class="form_field_icon"></label>
                     </div>
                     <div class="form_field_container" style="grid-column: 1/3">
-                        <input id="email" type="email" name="email" placeholder="Correo electrónico" class="form_field" <?php if(isset($_POST['email'])) echo("value='$email'"); ?> required>
+                        <input id="email" type="email" name="email" placeholder="Correo electrónico" class="form_field" <?php if(!empty($_POST['register_email'])){$email=$_POST['register_email'];echo("value='$email'");} ?> <?php if(isset($_POST['email'])) echo("value='$email'"); ?> required>
                         <label for="email"><img src="src/inputicons/email_icon.svg" class="form_field_icon"></label>
                     </div>
                     <div class="form_field_container" style="grid-column: 1/3">

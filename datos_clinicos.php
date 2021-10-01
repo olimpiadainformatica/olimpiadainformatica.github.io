@@ -1,3 +1,14 @@
+<?php
+    include 'conexion.php';
+    include 'header.php';
+    session_start();
+    $varsesion= $_SESSION['dni_logeado'];
+
+    if($varsesion == null || $varsesion = ''){
+        header("location:login.php");
+    }
+
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -12,7 +23,7 @@
         <link rel="stylesheet" href="style/datos_clinicos.css">
     </head>
     <body>
-        <header logged></header>
+        <?php $dni = $_SESSION['dni_logeado']; $header=header_paginas($dni,$con); echo($header[0]); ?>
 
         <main>
             <div id="info_text">

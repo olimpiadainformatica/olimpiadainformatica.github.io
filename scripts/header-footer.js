@@ -1,5 +1,5 @@
 // HEADER
-
+/*
 let header = document.getElementsByTagName("header")[0];
 
 let navbar = document.createElement("navbar");
@@ -39,7 +39,7 @@ if (header.hasAttribute("logged")){
 navbar.appendChild(newElement);
 
 header.appendChild(navbar);
-
+*/
 // FOOTER
 
 let footer = document.getElementsByTagName("footer")[0];
