@@ -6,8 +6,8 @@
             return "<header>
                         <a id='header_organization_name' href='index.php'>MEDHEALTH<img src='src/icons/home_icon.jpg'></a>
                         <navbar>
-                            <a id='header_help_btn' href='#'>AYUDA</a>
-                            <a id='header_about_btn' href='#'>ACERCA DE</a>
+                            <a id='header_help_btn' href='ayuda.php'>AYUDA</a>
+                            <a id='header_about_btn' href='acerca_de.php'>ACERCA DE</a>
                             <a id='header_login_btn' href='login.php'>INICIAR SESION</a>
                         </navbar>
                     </header>";
@@ -22,8 +22,9 @@
             return array("<header>
                         <a id='header_organization_name' href='index.php'>MEDHEALTH<img src='src/icons/home_icon.jpg'></a>
                         <navbar>
-                            <a id='header_help_btn' href='#'>AYUDA</a>
-                            <a id='header_about_btn' href='cerrar_sesion.php'>CERRAR SESION</a>
+                            <a id='header_help_btn' href='ayuda.php'>AYUDA</a>
+                            <a id='header_about_btn' href='acerca_de.php'>ACERCA DE</a>
+                            <a id='header_finish_session_btn' href='cerrar_sesion.php'>CERRAR SESION</a>
                             <a id='header_login_btn' href='user_index.php'>$nombre</a>
                         </navbar>
                     </header>",$nombre);

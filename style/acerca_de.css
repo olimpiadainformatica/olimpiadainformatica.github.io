@@ -1,0 +1,51 @@
+main{
+    width: 90%;
+    margin: 80px auto 0 auto;
+}
+
+
+h1{
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+}
+
+#brand_name{
+    font-family: 'Poiret One', cursive;
+    font-weight: bold;
+}
+
+.developer_container{
+    display: grid;
+    grid-template-columns: 100px 80%;
+    grid-template-rows: 50px 2px 48px; 
+    margin: 60px 0 60px 0px;
+    width: 60%;
+}
+
+.developer_container img{
+    width: 100px;
+    height: auto;
+    grid-row: 1/4;
+    grid-column: 1/2;
+    box-sizing: border-box;
+    border: 2px solid #666;
+    background-color: #666;
+    border-radius: 5px;
+}
+
+.developer_container .developer_name{
+    font-size: 160%;
+    margin: auto 0 0 10px; 
+    font-family: 'Sansation', sans-serif;
+}
+
+.separator{
+    display: block;
+    width: 100%;
+    background-color: #666;
+}
+
+.developer_container .roles{
+    font-size: 120%;
+    margin: 0 0 auto 10px;
+}

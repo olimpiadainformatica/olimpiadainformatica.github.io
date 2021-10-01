@@ -49,7 +49,7 @@
                     <img src="src/icons/lifestyle_icon.svg" alt="">
                     <p>Estilo de Vida</p>
                 </a>
-                <a class="item_container" href="#">
+                <a class="item_container" href="tipos_enfermedades.php">
                     <img src="src/icons/diseases_icon.svg" alt="">
                     <p>Tipos de Enfermedades</p>
                 </a>
