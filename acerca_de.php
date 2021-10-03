@@ -2,11 +2,6 @@
     include 'conexion.php';
     include 'header.php';
     session_start();
-    $varsesion= $_SESSION['dni_logeado'];
-
-    if($varsesion == null || $varsesion = ''){
-        header("location:login.php");
-    }
 
 ?>
 
@@ -25,7 +20,13 @@
     </head>
     <body>
 
-        <?php $dni = $_SESSION['dni_logeado']; $header=header_paginas($dni,$con); echo($header[0]); ?>
+        <?php if(isset($_SESSION['dni_logeado'])){
+                 $dni = $_SESSION['dni_logeado'];
+                 $header=header_paginas($dni,$con);
+                 echo($header[0]);
+              }else{
+                 echo(header_paginas());
+              } ?>
 
         <main>
             <h1>Desarrolladores de <span id="brand_name">MedHealth</span></h1>
