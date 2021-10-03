@@ -3,7 +3,7 @@ main{
     grid-column: 1fr;
     grid-row: 1fr;
     width: 80%;
-    height: 100vh;
+    min-height: 100vh;
     margin: 0 auto 0 auto; 
     overflow-y: hidden;
 }

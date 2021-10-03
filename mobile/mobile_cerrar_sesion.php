@@ -2,7 +2,7 @@
     $varsesion= $_SESSION['dni_logeado'];
 
     if($varsesion == null || $varsesion = ''){
-        header("location:login.php");
+        header("location:mobile_login.php");
     }
     
     session_start();

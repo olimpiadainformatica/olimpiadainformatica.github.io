@@ -1,0 +1,46 @@
+main{
+    width: 80%;
+    margin: 15vw auto 10vw auto; 
+}
+
+#info_text{
+    width: 100%;
+    margin: 0 auto 0 auto;
+    background-color: var(--light_blue);
+    padding: 0;
+    border-radius: 3vw;
+    padding: 2vw;
+    box-sizing: border-box;
+}
+
+#protocols{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    width: 100%;
+    margin: 10vw auto 0 auto;
+    row-gap: 10vw;
+}
+
+.protocol_item{
+    display: grid;
+    grid-template-columns: 20vw 1fr;
+    justify-items: center;
+    margin: 5vw 0 0 0;
+}
+
+.protocol_item img{
+    width: 15vw;
+    height: auto;
+    margin: 0;
+}
+
+.protocol_item p{
+    margin: 0;
+    font-size: 100%;
+    color: #000000;
+    font-weight: bold;
+    align-self: center;
+    text-align: left;
+    justify-self: start;
+}
