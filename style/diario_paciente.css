@@ -1,0 +1,117 @@
+main{
+  width: 80%;
+  margin: 60px auto 0 auto;
+}
+
+
+
+#diario {
+  display: flex;
+  width: 100%;
+  margin: 0 auto 20px 0;
+  align-items: center;
+}
+#diario p {
+  width: 100%;
+  background-color: #C4C4C4;; 
+  padding: 20px;
+  margin: auto 5px 0;
+  border-radius: 30px;
+  color:#000; 
+  font-size: 20px;
+  line-height: 20px;
+  
+}
+
+#diario img {
+  width: 75px;
+  height: 75px;
+  left: 191px;
+  top: 213px;
+}
+
+* {
+    box-sizing: border-box;
+  }
+  
+  button,
+  input,
+  textarea {
+    padding: 9px;
+  }
+ 
+  input:focus,
+  textarea:focus {
+    background: #E4E8FA
+  }
+  
+  input,
+  textarea,
+  button {
+    width: 100%;
+    background: #C4C4C4;
+  }
+
+
+table { 
+
+width: 100%;
+
+}
+
+p{ 
+text-align: center;
+width: 100%;
+
+}
+
+#enfermedades {
+
+    text-align: center;
+    width: 100%;
+    font-size: 25px;
+    line-height: 25px;
+    color: #000;
+    text-transform: uppercase;
+}
+#consultas {
+
+  text-align: center;
+  width: 100%;
+  font-size: 25px;
+  line-height: 25px;
+  color: #000;
+  text-transform: uppercase;
+}
+
+#notas{
+
+  text-align: center;
+  width: 100%;
+  font-size: 25px;
+  line-height: 25px;
+  color: #000;
+  text-transform: uppercase;
+}
+
+div { 
+  text-align: center;
+ 
+}
+ul {
+  display: inline-block;
+  text-align: center;
+  font-family: 'Sansation Regular', arial;
+ font-size: 20px;
+ color:#000; 
+}
+
+input[type=submit] {
+
+position: relative;
+width: 150px;
+height: 40px;
+border-radius: 30px;
+background: #A2A2D9E8;
+margin-left: 80%;
+}
