@@ -1,4 +1,4 @@
-main{
+form{
     display: grid;
     grid-template: repeat(10, 1fr) repeat(4, 2fr) / 1fr 1fr;
     width: 60%;
@@ -52,6 +52,29 @@ main{
     overflow-wrap:break-word;
     align-self: center;
 }
+
+#submit_edit_btn{
+    color: #eeeeee;
+    font-weight: bold;
+
+    background-color: #6c8ece;
+    padding: 5px 20px 5px 20px;
+    border-radius: 20px;
+}
+
+#submit_edit_btn:hover{
+    background-color: #3263bf;
+}
+
+#submit_save_btn{
+    color: #eeeeee;
+    font-weight: bold;
+
+    background-color: #003dae;
+    padding: 5px 20px 5px 20px;
+    border-radius: 20px;
+}
+
 
 .horizontal_line{
     display: block;
