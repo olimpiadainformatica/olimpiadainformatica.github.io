@@ -1,0 +1,96 @@
+main {
+  width: 80%;
+  margin: 60px auto 0 auto;
+}
+
+#info_text {
+  display: flex;
+  width: 100%;
+  margin: 0 auto 20px 0;
+  align-items: center;
+}
+#info_text p {
+  width: 100%;
+  background-color: #e4e8fa;
+  padding: 1.25em;
+  margin: auto 0.013em 0;
+  border-radius: 30px;
+}
+
+#info_text img {
+  width: 75px;
+  height: 4.688em;
+  left: 11.938em;
+  top: 13.313em;
+}
+
+.contenedor {
+  width: 375px;
+  line-height: 50px;
+  text-align: center;
+}
+
+.edad {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+  font-family: Quicksand;
+  text-transform: uppercase;
+  color: #000000;
+  font-size: 20px;
+}
+
+.contenedor img {
+  width: 130px;
+  height: 0px;
+  left: 68px;
+  right: 68px;
+  border: 0.01px solid #000000;
+}
+
+#vacunaingreso {
+  width: 550px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: Quicksand;
+  font-size: 15px;
+  line-height: 20px;
+  text-transform: none;
+  font-feature-settings: "tnum" on, "lnum" on;
+  color: #000000;
+  background: rgba(65, 169, 174, 0.53);
+  border-radius: 10px;
+  text-align: center;
+}
+
+#contenedorcompleto {
+  width: 400px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 100px);
+  gap: 20px 20px;
+  margin: auto;
+  justify-content: center;
+}
+
+#adolescentes {
+  box-sizing: border-box;
+}
+body {
+  font-size: 14px;
+}
+
+#contenedorcompleto p {
+  display: block;
+  width: 115px;
+  height: auto;
+  box-sizing: br-box;
+  white-space: nowrap;
+  overflow: hidden;
+  background: #245a5e;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 100px;
+  color: white;
+  padding: 20% 0 20% 0;
+  margin: 0 10px 5% 10px;
+  text-align: center;
+}
