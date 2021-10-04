@@ -45,6 +45,7 @@ main {
   height: 0px;
   left: 68px;
   right: 68px;
+	vertical-align: middle;
   border: 0.01px solid #000000;
 }
 
@@ -97,6 +98,18 @@ body {
 	cursor: pointer;
 }
 
+
+#pop-up-background {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background-color: black;
+	opacity: 40%;
+	display: none;
+}
+
 .pop-up {
 	display: none;
 	background-color: white;
@@ -123,4 +136,26 @@ body {
 .btn-cerrar-popup {
 	width: auto !important;
 	padding: 0 !important;
+}
+
+#covid-19 button:not(.btn-cerrar-popup){
+	color: black;
+	background-color: white !important;
+	width: 150px !important;
+	height: auto !important;
+	min-height: auto !important;
+	padding: 0 !important;
+	border: 1px solid black;
+	border-radius: 0;
+	margin: 5px;
+}
+
+#covid-19 div:not(#vacunas) {
+	align-items: center;
+	justify-content: space-between;
+	display: flex;
+}
+
+#covid-19 div img {
+	margin-right: 30px;
 }

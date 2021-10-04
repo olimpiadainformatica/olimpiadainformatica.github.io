@@ -33,28 +33,19 @@
 
 				<div id="contenedorcompleto">
             <div></div>
-
-            <p>
-                COVID-19</p>
-
+            <button onclick="openpopup('covid-19')">COVID-19</button>
             <br>
-
-
             <div class="contenedor">
                 <img src="style/linea izquierda edad.svg" alt="">
-
                 <div class="edad">
                     Por edad
-
                 </div>
                 <img src="style/linea derecha edad.svg" alt="">
             </div>
-
-
             <div></div>
             <div></div>
 
-            <button onclick="openpopup('trece-años')">TRECE AÑOS</button>
+						<button onclick="openpopup('trece-años')">TRECE AÑOS</button>
             <button onclick="openpopup('once-años')">ONCE AÑOS</button>
             <button onclick="openpopup('dos-años')">DOS AÑOS</button>
             <button onclick="openpopup('doce-meses')">DOCE MESES</button>
@@ -64,6 +55,156 @@
             <button onclick="openpopup('dos-meses')">DOS MESES</button>
             <button onclick="openpopup('nacimiento')">NACIMIENTO</button>
 
+						<div id="pop-up-background"></div>
+
+						<div class="pop-up" id="covid-19">
+							<header>
+								<p>Vacunas aprobadas y autorizadas</p>
+								<button onclick="closepopup('covid-19')" class="btn-cerrar-popup"><i class="fas fa-times"></i></button>						
+							</header>
+							<p>Las siguientes son las vacunas aprobadas y autorizadas en Argentina para la prevención del COVID-19:</p>
+							<div>
+								<div id="vacunas">
+									<button onclick="closepopup('covid-19'); openpopup('sputnik-v');">Sputnik V</button> 	
+									<button onclick="closepopup('covid-19'); openpopup('covishield')">Covishield</button> 	
+									<button onclick="closepopup('covid-19'); openpopup('sinopharm')">Sinopharm</button> 	
+									<button onclick="closepopup('covid-19'); openpopup('astrazenca')">AstraZeneca</button> 	
+									<button onclick="closepopup('covid-19'); openpopup('comirnaty')">Comirnaty</button> 	
+									<button onclick="closepopup('covid-19'); openpopup('moderna')">Moderna</button> 	
+									<button onclick="closepopup('covid-19'); openpopup('convidecia')">Convidecia</button>
+								</div>
+								<img src="style/vacuna.svg">
+							</div>
+							
+						</div>
+
+
+						<div class="pop-up" id="sputnik-v">
+							<header>
+								<p>Sputnik V</p>
+								<button onclick="closepopup('sputnik-v'); openpopup('covid-19')" class="btn-cerrar-popup"><i class="fas fa-times"></i></button>
+							</header>
+							<ul>
+								<li>Nombre: Gam-COVID-Vac</li>
+								<li>Desarrollador: Centro Nacional Gamaleya de Epidemiología y Microbiología - Rusia</li>
+								<li>Autorizado edad (edad): ≥ 18 años</li>
+								<li>Plataforma: vector viral no replicativo</li>
+								<li>Contraindicaciones: hipersensibilidad a cualquier componente; antecedente de reacciones alérgicas graves o anafilaxia; enfermedades agudas graves o exacerbación de enfermedades crónicas.</li>
+								<li>Contraindicaciones para segunda dósis: complicaciones graves posvacunación (shock anafiláctico, reacciones alérgicas generalizadas y graves, síndrome convulsivo, fiebre superior a 40° C, etc.) por la inyección del Componente 1 de la vacuna.</li>
+								<li>Cantidad de dosis: 2</li>
+							</ul>
+						</div>
+
+						<div class="pop-up" id="covishield">
+							<header>
+								<p>Covishield</p>
+								<button onclick="closepopup('covishield'); openpopup('covid-19')" class="btn-cerrar-popup"><i class="fas fa-times"></i></button>
+							</header>
+							<ul>
+								<li>Nombre: Vacuna contra covid-19 ChAdOx1 nCoV- 19 Corona Virus Vaccine (Recombinant)</li>
+								<li>Desarrollador: Serum Institute - India</li>
+								<li>Autorizado edad (edad): ≥ 18 años</li>
+								<li>Plataforma: vector viral no replicativo</li>
+								<li>Contraindicaciones: hipersensibilidad a cualquier componente.</li>
+								<li>Contraindicaciones para segunda dósis: reacción anafiláctica con la primera dosis.</li>
+								<li>Precauciones: enfermedad febril aguda grave; trombocitopenia y trastornos de la coagulación.</li>
+								<li>Cantidad de dosis: 2</li>
+							</ul>
+						</div>
+
+						<div class="pop-up" id="sinopharm">
+							<header>
+								<p>Sinopharm</p>
+								<button onclick="closepopup('sinopharm'); openpopup('covid-19')" class="btn-cerrar-popup"><i class="fas fa-times"></i></button>
+							</header>
+							<ul>
+								<li>Nombre: SARS COV-2 (células vero) inactivada</li>
+								<li>Desarrollador: Beijing Institute of Biological Products - República Popular China</li>
+								<li>Autorizado edad (edad): ≥ 18 años</li>
+								<li>Plataforma: vector viral no replicativo</li>
+								<li>Contraindicaciones: hipersensibilidad a cualquier componente; antecedente de reacciones alérgicas graves (con compromiso respiratorio que haya requerido asistencia médica); exacerbación de enfermedades crónicas, que impliquen compromiso del estado general.</li>
+								<li>Contraindicaciones para segunda dósis: reacción anafiláctica con la primera dosis.</li>
+								<li>PRECAUCIONES: enfermedad febril aguda grave; trombocitopenia y trastornos de la coagulación; epilepsia no controlada u otro trastorno neurológico progresivo.</li>
+								<li>Cantidad de dosis: 2</li>
+							</ul>
+						</div>
+
+						<div class="pop-up" id="astrazenca">
+							<header>
+								<p>AstraZeneca</p>
+								<button onclick="closepopup('astrazenca'); openpopup('covid-19')" class="btn-cerrar-popup"><i class="fas fa-times"></i></button>
+							</header>
+							<ul>
+								<li>Nombre:  ChAdOx1 nCoV-19 vaccine (AZD1222)</li>
+								<li>Desarrollador: AstraZeneca-Oxford - Reino Unido.</li>
+								<li>Autorizado edad (edad): ≥ 18 años</li>
+								<li>Plataforma: vector viral no replicativo</li>
+								<li>Contraindicaciones: reacción anafiláctica con la primera dosis.</li>
+								<li>Contraindicaciones para segunda dósis: reacción anafiláctica con la primera dosis.</li>
+								<li>Precauciones: enfermedad febril aguda grave; trombocitopenia y trastornos de la coagulación.</li>
+								<li>Cantidad de dosis: 2</li>
+							</ul>
+						</div>
+
+						<div class="pop-up" id="comirnaty">
+							<header>
+								<p>Comirnaty</p>
+								<button onclick="closepopup('comirnaty'); openpopup('covid-19')" class="btn-cerrar-popup"><i class="fas fa-times"></i></button>
+							</header>
+							<ul>
+								<li>Nombre:  Pfizer-BionTech COVID-19 Vaccine</li>
+								<li>Desarrollador: Pfizer-BioNTech</li>
+								<li>Autorizado edad (edad): ≥ 12 años</li>
+								<li>Plataforma: ARN mensajero</li>
+								<li>Contraindicaciones: Hipersensibilidad a cualquier componente de una vacuna o a una vacuna que contenga componentes similares.</li>
+								<li>Contraindicaciones para segunda dósis: anafilaxia o reacción alérgica grave inmediata a la administración de la primera dosis.</li>
+								<li>Contraindicación temporal: enfermedades agudas graves (infecciosas y no infecciosas) o exacerbación de enfermedades crónicas, que impliquen compromiso del estado general (ej. asma grave no controlado).</li>
+								<li>Precauciones</li>
+								<li>Enfermedad febril aguda grave.</li>
+								<li>Trombocitopenia y trastornos de la coagulación.</li>
+								<li>Cantidad de dosis: 2</li>
+							</ul>
+						</div>
+
+						<div class="pop-up" id="moderna">
+							<header>
+								<p>Moderna</p>
+								<button onclick="closepopup('moderna'); openpopup('covid-19')" class="btn-cerrar-popup"><i class="fas fa-times"></i></button>
+							</header>
+							<ul>
+								<li>Nombre:  Vacuna mRAN-1273 COVID-19</li>
+								<li>Desarrollador: Moderna Switzerland GmbH</li>
+								<li>Autorizado edad (edad): ≥ 12 años</li>
+								<li>Plataforma: ARN mensajero</li>
+								<li>Contraindicaciones: Hipersensibilidad a cualquier componente de una vacuna o a una vacuna que contenga componentes similares.</li>
+								<li>Contraindicación temporal: enfermedades agudas graves (infecciosas y no infecciosas) o exacerbación de enfermedades crónicas, que impliquen compromiso del estado general (ej. asma grave no controlado).</li>
+								<li>Precauciones:  Enfermedad febril aguda grave (con compromiso del estado general y trombocitopenia y trastornos de la coagulación.</li>
+								<li>Cantidad de dosis: 2</li>
+							</ul>
+						</div>
+
+						<div class="pop-up" id="convidecia">
+							<header>
+								<p>Convidecia</p>
+								<button onclick="closepopup('convidecia'); openpopup('covid-19')" class="btn-cerrar-popup"><i class="fas fa-times"></i></button>
+							</header>
+							<ul>
+								<li>Nombre:  Ad5-nCoV</li>
+								<li>Desarrollador: Instituto de Biotecnología de Beijing (Beijing, China) y CanSino Biologics Inc.</li>
+								<li>Autorizado edad (edad): ≥ 18 años</li>
+								<li>Plataforma: vector viral no replicante de adenovirus tipo 5 que expresa la glicoproteína Spike (S) del SARS-CoV-2</li>
+								<li>Contraindicaciones:</li>
+								<li>Hipersensibilidad a cualquier componente de una vacuna o a una vacuna que contenga componentes similares.</li>
+								<li>Antecedente de reacciones alérgicas graves (con compromiso respiratorio que haya requerido asistencia médica).</li>
+								<li>Exacerbación de enfermedades crónicas, que impliquen compromiso del estado general.</li>
+								<li>Personas con epilepsia no controlada y otras enfermedades neurológicas progresivas ó historia de síndrome de Guillain-Barré.</li>
+								<li>Precauciones:</li>
+								<li>Enfermedad febril aguda grave o exacerbación de enfermedades crónicas</li>
+								<li>Trombocitopenia y trastornos de la coagulación</li>
+								<li>Cantidad de dosis: 1</li>
+							</ul>
+						</div>
+						
 						<div class="pop-up" id="trece-años">
 							<header>
 								<p>¿Qué vacunas recibirá mi hijo?</p>
@@ -77,7 +218,6 @@
 							</ul>
 						</div>
 
-
 						<div class="pop-up" id="once-años">
 							<header>
 								<p>¿Qué vacunas recibirá mi hijo?</p>
@@ -90,7 +230,8 @@
 								<li>Tétanos , difteria y tos ferina (pertusis) (una dosis de la vacuna Tdap)</li>
 								<li>Influenza (gripe) (una dosis de vacuna cada año)</li>
 							</ul>
-						</div>							
+						</div>
+
 						<div class="pop-up" id="dos-años">
 							<header>
 								<p>¿Qué vacunas recibirá mi hijo?</p>
@@ -100,7 +241,8 @@
 							<ul>
 								<li>Influenza (gripe) (todos los años)</li>
 							</ul>
-						</div>							
+						</div>
+
 						<div class="pop-up" id="doce-meses">
 							<header>
 								<p>¿Qué vacunas recibirá mi bebé?</p>
@@ -118,7 +260,8 @@
 									<li>Hepatitis B (HepB) (3 rd dosis entre los 6 meses y 18 meses)</li>
 									<li>Influenza (gripe) (todos los años)</li>
 								</ul>
-						</div>							
+						</div>
+
 						<div class="pop-up" id="siete-meses">
 							<header>
 								<p>¿Qué vacunas recibirá mi bebé?</p>
@@ -128,7 +271,8 @@
 							<ul>
 								<li>Influenza (gripe) (todos los años)</li>
 							</ul>
-						</div>							
+						</div>
+
 						<div class="pop-up" id="seis-meses">
 							<header>
 								<p>¿Qué vacunas recibirá mi bebé?</p>
@@ -143,7 +287,8 @@
 								<li>Rotavirus (RV) ( 3ª dosis)</li>
 								<li>Influenza (gripe) (todos los años)</li>
 							</ul>
-						</div>							
+						</div>
+
 						<div class="pop-up" id="cuatro-meses">
 							<header>
 							<p>¿Qué vacunas recibirá mi bebé?</p>
@@ -157,7 +302,8 @@
 								<li>Enfermedad neumocócica (PCV13) ( segunda dosis)</li>
 								<li>Rotavirus (RV) ( segunda dosis)</li>
 							</ul>
-						</div>							
+						</div>				
+
 						<div class="pop-up" id="dos-meses">
 							<header>
 								<p>¿Qué vacunas recibirá mi bebé?</p>
@@ -171,7 +317,8 @@
 								<li>Polio (IPV)  ( 1ª dosis)</li>
 								<li>Rotavirus (RV)   ( 1ª dosis)</li>
 							</ul>
-						</div>							
+						</div>	
+
 						<div class="pop-up" id="nacimiento">
 							<header>
 								<p>La primera inyección de tu bebé</p>
@@ -180,7 +327,8 @@
 							<p>Poco después del nacimiento, su bebé debe recibir la primera dosis de la vacuna para ayudar a protegerse contra la siguiente enfermedad:</p>
 							<p>Hepatitis B (HepB)  (primera dosis)</p>
 							<p>Esta vacuna actúa como una red de seguridad, reduciendo el riesgo de contraer la enfermedad de usted o de miembros de su familia que pueden no saber que están infectados con hepatitis B.</p>
-						</div>							
+						</div>	
+
     </main>
 
     <footer></footer>
