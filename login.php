@@ -71,7 +71,7 @@
                             <!-- SCRIPT TEMPORAL PARA IR A LA PÁGINA DE INICIO DE USUARIO-->
                         </div>
                         <div>
-                            <a id="recover_btn" href="recuperar.php">RECUPERAR CONTRASEÑA</a>
+                            <a id="recover_btn" href="recuperar.php">CAMBIAR CONTRASEÑA</a>
                         </div>
                     </form>
                 </div>
