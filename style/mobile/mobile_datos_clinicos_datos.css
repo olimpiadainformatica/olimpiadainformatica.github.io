@@ -1,0 +1,111 @@
+main{
+    width: 80%;
+    margin: 15vw auto 10vw auto; 
+}
+
+form{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(15, 1fr) repeat(4, 2fr);
+    width: 100%;
+    background-color: var(--light_blue);
+    margin: 20vw auto 0 auto;
+    border-radius: 5vw;
+    box-sizing: border-box;
+}
+
+#list_header{
+    display: block;
+    box-sizing: border-box;
+    border-radius: 5vw 5vw 0 0;
+    width: 100%;
+    height: 100%;
+    background-color: #A2A2D9;
+    color: #111;
+    margin: 0 auto 0 auto;
+    padding: 0.5vw 0 0.5vw 0;
+    text-align: center;
+    align-self: center;
+}
+
+.data_field{
+    display: grid;
+    grid-template: 1fr / 1fr 2fr;
+    padding: 0 8% 0 8%;
+    margin: 0;
+    column-gap: 2vw;
+}
+
+.data_field_title{
+    display: block;
+    font-weight: bold;
+    margin: 0 auto 0 0;
+    align-self: center;
+}
+
+.data_field_info{
+    display: block;
+    width: 100%;
+    height: fit-content;
+    background-color: var(--header_color);
+    border-radius: 2vw;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 1vw 1vw 1vw 1vw;
+    overflow-wrap: break-word;
+    align-self: center;
+    color: white;
+    border: 0;
+}
+
+#submit_edit_btn{
+    color: #eeeeee;
+    font-weight: bold;
+    background-color: #6c8ece;
+    padding: 0.5vw 2vw 0.5vw 2vw;
+    border-radius: 5vw;
+    border: 0;
+}
+
+#submit_edit_btn:hover, #submit_save_btn:hover{
+    background-color: #3263bf;
+}
+
+#submit_save_btn{
+    color: #eeeeee;
+    font-weight: bold;
+    background-color: #003dae;
+    padding: 0.5vw 2vw 0.5vw 2vw;
+    border-radius: 5vw;
+    border: 0;
+}
+
+.horizontal_line{
+    display: block;
+    width: 100%;
+    height: 0.3vw;
+    margin: auto;
+    background-color: #222;
+}
+
+.big_data_field{
+    display: grid;
+    grid-template: 1fr / 1fr;
+    padding: 0 4% 0 4%;
+    margin: 0;
+    column-gap: 2vw;
+}
+
+.big_data_field_info{
+    display: block;
+    width: 100%;
+    height: fit-content;
+    min-height: 24vw;
+    background-color: var(--header_color);
+    border-radius: 15px;
+    box-sizing: border-box;
+    padding: 0 10px 0 10px;
+    overflow-wrap:break-word;
+    align-self: center;
+    color: white;
+}

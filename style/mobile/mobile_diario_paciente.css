@@ -1,0 +1,124 @@
+main{
+  width: 80%;
+  margin: 15vw auto 10vw auto; 
+}
+
+#diario {
+  display: flex;
+  width: 100%;
+  margin: 0 auto 2vw 0;
+  align-items: center;
+}
+
+#diario h1 {
+  width: 100%;
+  padding: 2vw;
+  font-size: 200%;
+  margin: auto 0.5vw 0;
+  border-radius: 3vw;
+  text-decoration: underline;
+}
+
+* {
+    box-sizing: border-box;
+}
+  
+  button,
+  input,
+  textarea {
+    padding: 1vw;
+  }
+ 
+  input:focus,
+  textarea:focus {
+    background: #E4E8FA
+  }
+  
+  input,
+  textarea,
+  button {
+    width: 100%;
+    background: #DDD;
+  }
+
+#enfermedades {
+
+    text-align: center;
+    width: 100%;
+    line-height: 2.5vw;
+    color: #000;
+    text-transform: uppercase;
+}
+#consultas {
+
+  text-align: center;
+  width: 100%;
+  line-height: 2.5vw;
+  color: #000;
+  text-transform: uppercase;
+}
+
+#notas{
+
+  text-align: center;
+  width: 100%;
+  line-height: 2.5vw;
+  color: #000;
+  text-transform: uppercase;
+}
+
+div { 
+  text-align: center;
+ 
+}
+ul {
+  display: inline-block;
+  text-align: center;
+  font-family: 'Sansation Regular', arial;
+ color:#000; 
+}
+
+
+.lista-enfermedad {
+  display: inline-block;
+  width: auto;
+  margin: auto;
+  text-align: left;
+}
+
+input[type=submit] {
+
+position: relative;
+width: 30vw;
+height: 10vw;
+border-radius: 3vw;
+border: 0;
+background: #A2A2D9E8;
+margin: 3vw auto 0 auto;
+}
+
+#tablas form{
+  margin: 10vw 0 10vw 0;
+  border: 1px solid #AAA;
+  padding: 1vw;
+  background-color: #CCC;
+  border-radius: 1vw;
+  box-shadow: 1vw 1vw 1vw rgba(0,0,0,0.5);
+}
+
+#tablas p{
+  margin: 0;
+  text-align: left;
+}
+
+#tablas .input-field{
+  margin-bottom: 3vw;
+}
+
+#tablas input{
+  background-color: white;
+}
+
+#tablas input[type="submit"]{
+  background-color: #A2A2D9E8;
+}
