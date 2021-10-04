@@ -1,7 +1,6 @@
 main{
     width: 80%;
     margin: 15vw auto 10vw auto; 
-    align-items: center;
 }
 
 h1{
@@ -15,6 +14,7 @@ h1{
     width: 100%;
     margin: 0 auto 2vw 0;
     align-items: center;
+    text-align: center;
 }
 
 #info_text img{
@@ -42,6 +42,7 @@ h1{
     height: 100%;
     background-color: #eaedfa;
     display: flex;
+    flex-direction: column;
     align-self: center;
     justify-content: flex-start;
     cursor: pointer;
@@ -65,4 +66,11 @@ h1{
     width: 20vw;
     height: auto;
     padding: 5vw;
+}
+
+.item_container p{
+    font-weight: bold;
+    text-align: center;
+    padding: 0 1vw 0 1vw;
+    font-family: 'Poiret One', cursive;
 }

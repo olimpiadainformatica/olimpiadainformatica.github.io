@@ -42,23 +42,30 @@
             <div id="sections_container">
                 <a class="item_container" href="mobile_datos_clinicos.php">
                     <img src="../src/icons/clinicaldata_icon.svg" alt="">
+                    <p>Datos clínicos</p>
                 </a>
                 <a class="item_container" href="mobile_estadisticas.php">
                     <img src="../src/icons/covidstatistics_icon.svg" alt="">
+                    <p>Covid-19 Estadísticas</p>
                 </a>
                 <a class="item_container" href="mobile_protocolos.php">
                     <img src="../src/icons/protocols_icon.svg" alt="">
+                    <p>Protocolos Actuales</p>
                 </a>
                 <a class="item_container" href="mobile_estilo_vida.php">
                     <img src="../src/icons/lifestyle_icon.svg" alt="">
+                    <p>Estilo de Vida</p>
                 </a>
                 <a class="item_container" href="mobile_tipos_enfermedades.php">
                     <img src="../src/icons/diseases_icon.svg" alt="">
+                    <p>Tipos de Enfermedades</p>
                 </a>
                 <a class="item_container" href="mobile_contacto_medico.php">
                     <img src="../src/icons/contact_icon.svg" alt="">
+                    <p>Contacto Médico</p>
                 </a>
             </div>
         </main>
+
     </body>
 </html>

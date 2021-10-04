@@ -1,0 +1,48 @@
+main{
+    width: 80%;
+    margin: 15vw auto 10vw auto; 
+}
+
+#info_text{
+    width: 100%;
+    margin: 0 auto 0 auto;
+    background-color: var(--light_blue);
+    padding: 0;
+    border-radius: 3vw;
+    padding: 2vw;
+    box-sizing: border-box;
+}
+
+#lifestyles_title{
+    display: block;
+    width: fit-content;
+    margin: 10vw auto 0 auto;
+    padding: 0 4vw 0 4vw;
+    background-color: #D9DFFF;
+    text-align: center;
+    font-size: 120%;
+    border-radius: 5vw;
+    box-shadow: inset 0px 0.2vw 0.2vw rgba(0, 0, 0, 0.25);
+}
+
+#lifestyles{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(7, 1fr);
+    width: 100%;
+    margin: auto;
+    row-gap: 5fr;
+}
+
+#lifestyles img{
+    width: 100%;
+    height: auto;
+    align-self: center;
+}
+
+#lifestyles p{
+    align-self: center;
+    font-size: 100%;
+    font-weight: bold;
+    text-align: center;
+}

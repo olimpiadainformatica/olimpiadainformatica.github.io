@@ -27,13 +27,26 @@ header navbar a{
     margin: 0 3vw 0 3vw;
 }
 
+header img{
+    width: 7vw;
+    padding: 1vw;
+    height: auto;
+    margin: 0vw 3vw 3vw 3vw;
+    background-color: white;
+    position: absolute;
+    right: 0;
+    top: 1vw;
+    background-color: white;
+    border-radius: 2vw;
+    box-sizing: border-box;
+}
+
 footer{
     position: relative;
     width: 100%;
     margin: 5% 0 0 0;
     background-color: var(--header_color);
-    height: 10px;
-    min-height: 50px;
+    height: 10vw;
     color: #000000;
     z-index: 998;
     text-align: center;

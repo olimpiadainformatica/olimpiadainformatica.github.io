@@ -1,0 +1,30 @@
+main{
+    width: 80%;
+    margin: 15vw auto 10vw auto; 
+}
+
+#info_text{
+    width: 100%;
+    margin: 0 auto 0 auto;
+    background-color: var(--light_blue);
+    padding: 0;
+    border-radius: 3vw;
+    padding: 2vw;
+    box-sizing: border-box;
+}
+
+#about_text{
+    width: 100%;
+    margin: 0 auto 0 auto;
+}
+
+#about_text li{
+    font-size: 100%;
+    margin-bottom: 5vw;
+}
+
+#diseases_img{
+    align-self: center;
+    width: 100%;
+    height: auto;
+}
