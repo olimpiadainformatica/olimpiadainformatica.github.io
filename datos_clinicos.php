@@ -50,7 +50,7 @@
                     <img src="src/clinicaldata/vaccine.svg" alt="">
                     <p>Vacunas</p>
                 </a>
-                <a class="item_container" href="#">
+                <a class="item_container" href="diario_paciente.php">
                     <img src="src/clinicaldata/pacientdiary.svg" alt="">
                     <p>Diario Paciente</p>
                 </a>
