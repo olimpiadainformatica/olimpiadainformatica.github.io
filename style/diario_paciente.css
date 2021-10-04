@@ -106,6 +106,14 @@ ul {
  color:#000; 
 }
 
+
+.lista-enfermedad {
+  display: inline-block;
+  width: auto;
+  margin: auto;
+  text-align: left;
+}
+
 input[type=submit] {
 
 position: relative;

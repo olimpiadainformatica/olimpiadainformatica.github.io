@@ -1,3 +1,9 @@
+<?php
+    include 'conexion.php';
+    include 'header.php';
+    session_start();
+
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -12,7 +18,13 @@
         <link rel="stylesheet" href="style/politics.css">
     </head>
     <body>
-        <header></header>
+        <?php if(isset($_SESSION['dni_logeado'])){//si esta logeado aparecera el nombre, caso contrario nop
+                 $dni = $_SESSION['dni_logeado'];
+                 $header=header_paginas($dni,$con);
+                 echo($header[0]);
+              }else{
+                 echo(header_paginas());
+              } ?>
 
         <main>
             <h1>Generic Terms of Service Template</h1>
