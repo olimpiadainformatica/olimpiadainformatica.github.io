@@ -24,6 +24,10 @@
 	</head>
 	<body>
 
+        <script>
+            window.AppInventor.setWebViewString("medhealth-server")
+        </script>
+
         <?php $dni = $_SESSION['dni_logeado']; $header=header_paginas($dni,$con); ?>
 
         <header>

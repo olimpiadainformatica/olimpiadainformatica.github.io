@@ -43,6 +43,10 @@
     </head>
     <body>
 
+        <script>
+            window.AppInventor.setWebViewString("medhealth-server")
+        </script>
+
         <main>
             <section id="login_section">
                 <img id="top_decoration" src="../src/mobile/vector1.svg" alt="">
