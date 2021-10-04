@@ -46,7 +46,7 @@
                     <img src="src/clinicaldata/clinichistory.svg" alt="">
                     <p>Datos</p>
                 </a>
-                <a class="item_container" href="">
+                <a class="item_container" href="vacunas.php">
                     <img src="src/clinicaldata/vaccine.svg" alt="">
                     <p>Vacunas</p>
                 </a>

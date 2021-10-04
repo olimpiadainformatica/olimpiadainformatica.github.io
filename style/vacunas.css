@@ -79,7 +79,7 @@ body {
   font-size: 14px;
 }
 
-#contenedorcompleto p {
+#contenedorcompleto button {
   display: block;
   width: 115px;
   height: auto;
@@ -93,4 +93,34 @@ body {
   padding: 20% 0 20% 0;
   margin: 0 10px 5% 10px;
   text-align: center;
+	border: 0;
+	cursor: pointer;
+}
+
+.pop-up {
+	display: none;
+	background-color: white;
+	position: absolute;
+}
+
+.pop-up header {
+	display: flex;
+	color: white;
+	text-align: center;
+	position: relative;
+	min-height: auto;
+	height: auto;
+	background: rgba(74, 162, 167, 0.74);
+	justify-content: center;
+  align-items: baseline;
+}
+
+.pop-up, .pop-up header {
+	width: 400px;
+	border-radius: 5px;
+}
+
+.btn-cerrar-popup {
+	width: auto !important;
+	padding: 0 !important;
 }
