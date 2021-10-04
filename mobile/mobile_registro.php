@@ -113,9 +113,6 @@
                         <label for="toe">Yo he leído y estoy de acuerdo con los Términos del Servicio y Condiciones de Uso</label>
                     </div>
                     <div>
-                        <p style="text-align: center;">Captcha</p>
-                    </div>
-                    <div>
                         <button id="register_btn" type="button" onclick="submitForm()">REGISTRARSE</button>
                     </div>
                     <p>&nbsp;</p>

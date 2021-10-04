@@ -21,7 +21,7 @@ h1{
 #register_form{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(9, 0.8fr);
+    grid-template-rows: repeat(8, 0.8fr);
     column-gap: 50px;
     padding: 0 40px 0 40px;
 }

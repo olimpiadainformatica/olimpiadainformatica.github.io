@@ -31,11 +31,11 @@ main{
 }
 
 .item_container{
+    display: block;
     border-radius: 5vw;
     box-sizing: border-box;
-    width: fit-content;
     padding: 1vw 3vw 1vw 3vw;
-    width: 80%;
+    width: 60vw;
     margin: auto;
     height: 100%;
     background-color: var(--light_blue);
@@ -54,7 +54,7 @@ main{
     display: block;
     width: 15vw;
     height: auto;
-    padding: 1vw 7vw 0 7vw;
+    padding: 1vw 0vw 0 0vw;
     margin: auto;
 }
 
@@ -62,5 +62,5 @@ main{
     font-weight: bold;
     text-align: center;
     padding: 0;
-    margin: 0 0 1vw 0;
+    margin: 0 0 0 0;
 }
