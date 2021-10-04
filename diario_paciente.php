@@ -220,8 +220,10 @@
                         <td><input type="text" name="motivo_<?php echo($fila['id_con']) ?>" value="<?php echo($fila['motivo']) ?>"/></td><!-- muestra la fecha y su name se relaciona con su id -->
                         <td><input type="text" name="especialidad_<?php echo($fila['id_con']) ?>" value="<?php echo($fila['especialidad']) ?>"/></td><!-- muestra la fecha y su name se relaciona con su id -->
                         <td><a href="eliminar_consulta.php?id=<?php echo($fila['id_con']); ?>">Eliminar</a></td><!--Aca esta el link para eliminar esta fila de consulta -->
-                        <td><input type="submit" name="actualizar" value="Actualizar"></td><!--Actualiza los campos mediante el name 'actualizar' -->
+                        <!--Actualiza los campos mediante el name 'actualizar' -->
+                        <td><input type="submit" name="actualizar" value="Actualizar"></td>
                     </tr>
+                    
                     </form>
                 <?php } } 
                 #################### FIN DE MUESTREO DE CONSULTAS ##############################?>
@@ -231,9 +233,10 @@
                 <td><input type="date" name="fecha"/></td>
                 <td><input type="text" name="motivo"/></td>
                 <td><input type="text" name="especialidad"/></td>
-                <td><input type="submit" name="guardado" value="Agregar Consulta"></td>
+                
             </tr>
         </table>
+        <input type="submit" name="guardado" value="Agregar Consulta" id="add_btn">
 
             <div id="enfermedades">
                 <p>
@@ -285,7 +288,7 @@
             EN CASO QUE LA VARIABLE HAYA SIDO DECLARADA ANTERIORMENTE en el MUESTREO DE ENFERMEDADES-->
             <p><textarea name="notas"><?php if(isset($nota)){echo($nota);} ?></textarea></p>
             <br>
-            <input type="submit" name="guardado" value="Guardar Datos">
+            <input type="submit" name="guardado" value="Guardar Datos" id="save_btn">
         </form>
        
 

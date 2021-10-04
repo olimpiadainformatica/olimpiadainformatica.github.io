@@ -52,7 +52,6 @@ main{
     background: #C4C4C4;
   }
 
-
 table { 
 
 width: 100%;
@@ -115,11 +114,26 @@ ul {
 }
 
 input[type=submit] {
+  border: 0;
+  position: relative;
+  width: 150px;
+  height: 40px;
+  border-radius: 30px;
+  background: #A2A2D9E8;
+  margin-left: 0;
+}
 
-position: relative;
-width: 150px;
-height: 40px;
-border-radius: 30px;
-background: #A2A2D9E8;
-margin-left: 80%;
+input[type=submit]:hover{
+  transition-duration: 0.1s;
+  background-color: #bcbcf8e8;
+}
+
+#add_btn{
+  display: block;
+  margin: 20px auto 100px auto;
+}
+
+#save_btn{
+  display: block;
+  margin: 0px auto 40px auto;
 }

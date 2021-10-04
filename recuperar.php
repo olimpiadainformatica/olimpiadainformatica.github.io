@@ -45,7 +45,6 @@
         <link rel="stylesheet" href="style/common.css">
         <link rel="stylesheet" href="style/header-footer.css">
         <link rel="stylesheet" href="style/recuperar.css">
-        <link rel="stylesheet" href="style/login.css">
     </head>
     <body>
         <script src="scripts/slider.js" async defer></script>

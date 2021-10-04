@@ -1,3 +1,15 @@
+<?php
+    include 'conexion.php';
+    include 'header.php';
+    session_start();
+    $varsesion= $_SESSION['dni_logeado'];
+
+    if($varsesion == null || $varsesion = ''){
+        header("location:login.php");
+    }
+
+?>
+
 <!DOCTYPE html>
 <html>
 
@@ -14,6 +26,8 @@
     <link href="https://allfont.es/allfont.css?fonts=sansation-regular" rel="stylesheet" type="text/css" />
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
 </head>
+
+<?php $dni = $_SESSION['dni_logeado']; $header=header_paginas($dni,$con); echo($header[0]); ?>
 
 <body>
     <main>
