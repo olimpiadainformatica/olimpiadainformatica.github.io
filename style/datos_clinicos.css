@@ -49,15 +49,15 @@ main{
     gap: 40px 20px;
     padding: 20px;
     margin: 0 auto 0 auto;
-    justify-content: space-between;
 }
 
 .item_container{
     border-radius: 15px;
     box-sizing: border-box;
-    width: fit-content;
     padding: 10px 30px 10px 30px;
+    width: 60%;
     height: 100%;
+    margin: auto;
     background-color: var(--header_color);
     align-self: center;
     cursor: pointer;
@@ -70,9 +70,11 @@ main{
 }
 
 .item_container img{
+    display: block;
+    margin: auto;
     width: 80px;
     height: auto;
-    padding: 10px 70px 0 70px;
+    padding: 10px 0 0;
 }
 
 .item_container p{
