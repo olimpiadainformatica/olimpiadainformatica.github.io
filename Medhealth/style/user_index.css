@@ -1,12 +1,6 @@
-body{
-    background-color: #12252F;
-    color: white;
-}
-
 main{
     width: 80%;
     margin: 60px auto 0 auto;
-    
 }
 
 h1{
@@ -31,24 +25,23 @@ h1{
 #sections_container{
     display: grid;
     width: 75%;
-    height: 60%;
-    background-color: rgba(0, 0, 0, 0.5);
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    background-color: var(--light_blue);
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     gap: 40px 20px;
     padding: 20px;
     margin: 0 auto 100px auto;
 }
 
 .item_container{
-    border: 1px solid 0;
+    border: 1px solid #999999;
     border-radius: 15px;
     box-sizing: border-box;
-    width: 50%;
+    box-shadow: inset 0px 4px 0px rgba(0, 56, 255, 0.5);
+    width: 90%;
     margin: 10px auto 10px auto;
     height: 100%;
-    background-color: #EF5B17;
-    color: white;
+    background-color: white;
     display: flex;
     align-self: center;
     justify-content: flex-start;
@@ -56,8 +49,9 @@ h1{
 }
 
 .item_container:hover{
-    background-color: #ed7b46;
+    background-color: rgba(0, 0, 0, 0.1);
     transition-duration: 0.2s;
+    box-shadow: inset 0px 8px 0px rgba(0, 56, 255, 0.5);
     
 }
 
@@ -69,7 +63,7 @@ h1{
 
 .item_container img{
     width: 80px;
-    height: 80%;
+    height: auto;
     padding: 10px;
     
 }

@@ -1,0 +1,169 @@
+body{
+  position: relative;
+}
+
+main {
+  width: 80%;
+  margin: 100px auto 0 auto;
+}
+
+#info_text {
+  display: flex;
+  width: 100%;
+  margin: 0 auto 20px 0;
+  align-items: center;
+}
+
+#info_text p {
+  width: 100%;
+  background-color: #e4e8fa;
+  padding: 1.25em;
+  margin: auto 0.013em 0;
+  border-radius: 30px;
+}
+
+#info_text img {
+  width: 75px;
+  height: 4.688em;
+  left: 11.938em;
+  top: 13.313em;
+}
+
+.contenedor {
+  width: 375px;
+  line-height: 50px;
+  text-align: center;
+}
+
+.edad {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+  font-family: Quicksand;
+  text-transform: uppercase;
+  color: #000000;
+  font-size: 20px;
+}
+
+.contenedor img {
+  width: 130px;
+  height: 0px;
+  left: 68px;
+  right: 68px;
+	vertical-align: middle;
+  border: 0.01px solid #000000;
+}
+
+#vacunaingreso {
+  width: 550px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: Quicksand;
+  font-size: 15px;
+  line-height: 20px;
+  text-transform: none;
+  font-feature-settings: "tnum" on, "lnum" on;
+  color: #000000;
+  background: rgba(65, 169, 174, 0.53);
+  border-radius: 10px;
+  text-align: center;
+}
+
+#contenedorcompleto {
+  width: 400px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 100px);
+  gap: 20px 20px;
+  margin: auto auto 100px auto;
+  justify-content: center;
+}
+
+#adolescentes {
+  box-sizing: border-box;
+}
+body {
+  font-size: 14px;
+}
+
+#contenedorcompleto button {
+  display: block;
+  width: 115px;
+  height: auto;
+  box-sizing: br-box;
+  white-space: nowrap;
+  overflow: hidden;
+  background: #245a5e;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 100px;
+  color: white;
+  padding: 20% 0 20% 0;
+  margin: 0 10px 5% 10px;
+  text-align: center;
+	border: 0;
+	cursor: pointer;
+}
+
+
+#pop-up-background {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100%;
+	background-color: black;
+	opacity: 40%;
+	display: none;
+}
+
+.pop-up {
+	display: none;
+  top: 20%;
+	background-color: white;
+	position: absolute;
+  overflow-x: hidden;
+}
+
+.pop-up header {
+	display: flex;
+	color: white;
+	text-align: center;
+	position: relative;
+	min-height: auto;
+	height: auto;
+	background: rgba(74, 162, 167, 0.74);
+	justify-content: center;
+  align-items: baseline;
+}
+
+.pop-up, .pop-up header {
+	width: 400px;
+	border-radius: 5px;
+  z-index: 0;
+}
+
+.btn-cerrar-popup {
+	width: auto !important;
+	padding: 2px 10px !important;
+}
+
+#covid-19 button:not(.btn-cerrar-popup){
+	color: black;
+	background-color: white !important;
+	width: 150px !important;
+	height: auto !important;
+	min-height: auto !important;
+	padding: 0 !important;
+	border: 1px solid black;
+	border-radius: 0;
+	margin: 5px;
+}
+
+#covid-19 div:not(#vacunas) {
+	align-items: center;
+	justify-content: space-between;
+	display: flex;
+}
+
+#covid-19 div img {
+	margin-right: 30px;
+}

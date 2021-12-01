@@ -80,6 +80,13 @@
                     <a id="register_btn" href="registro.php">REGISTRARME</a>
                 </div>
             </section>
+            <span id="vertical_line"></span>
+
+            <section id="slider_section">
+                <span id="slider_img">CONTACTO MÉDICO</span>
+                <span id="left_button" onclick="previousPicture()"></span>
+                <span id="right_button" onclick="nextPicture()"></span>
+            </section>
             
         </div>
         </main>

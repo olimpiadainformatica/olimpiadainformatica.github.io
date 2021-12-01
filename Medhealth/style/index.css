@@ -1,0 +1,111 @@
+main{
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    grid-template-rows: 1fr;
+}
+
+main #index_text{
+    margin: auto;
+    display: block;
+}
+
+main #index_text h1{
+    text-align: center;
+    font-size: 600%;
+    margin: 20px 0 0 0;
+    padding: 0;
+}
+
+main #index_text h2{
+    text-align: center;
+    font-size: 120%;
+    margin: 0;
+}
+
+main #index_text p{
+    text-align: left;
+    font-size: 150%;
+    margin: 50px 40px 20px 40px;
+}
+
+main #index_text form{
+    display: block;
+    text-align: center;
+    margin: 50px 10px 20px 10px;
+}
+
+main #index_text form input{
+    border: none;
+    background-color: #E5E5E5;
+    width: 60%;
+    height: 30px;
+    font-family: 'Quicksand', sans-serif;
+    color: #000000;
+    font-size: 120%;
+}
+
+main #index_text form button{
+    border: none;
+    background-color: var(--blue);
+    width: 30%;
+    height: 30px;
+    font-family: 'Quicksand', sans-serif;
+    color: #EEEEEE;
+    border-radius: 5px;
+    font-size: 120%;
+}
+
+main #index_text form button:hover{
+    background-color: var(--blue_hover);
+    transition-duration: 0.2s;
+    cursor: pointer;
+}
+
+main #index_illustration{
+    max-width: 1000px;
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+section h2{
+    display: block;
+    text-align: center;
+    background-color: var(--light_blue);
+    padding: 5px 10px 5px 10px;
+    width: 600px;
+    margin: 40px auto 40px auto;
+    border-radius: 10px;
+}
+
+section #medhealth_offers{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 75%;
+    margin: auto;
+}
+
+.offer_item{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    margin: 50px 0 0 0;
+}
+
+.offer_item img{
+    width: 100px;
+    height: auto;
+    margin: 0;
+}
+
+.offer_item p{
+    font-family: 'Poiret One', cursive;
+    margin: 0;
+    font-size: 160%;
+    font-weight: bolder;
+    color: #000000;
+    align-self: center;
+    text-align: left;
+    justify-self: start;
+}
