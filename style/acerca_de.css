@@ -17,6 +17,7 @@ h1{
 #brand_name{
     font-family: 'Poiret One', cursive;
     font-weight: bold;
+    font-size: 100%;
 }
 
 .developer_container{

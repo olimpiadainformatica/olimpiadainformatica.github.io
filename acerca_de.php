@@ -8,7 +8,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Acerca de - MedHealth</title>
+        <title>Acerca de - Cheese Maker</title>
 		<meta charset="UTF-8">
         <meta name="description" content="Olimpiadas INET 2021">
         <meta name="author" content="Acosta Soledad, Cabrera José, Mansilla Franco, Nores Mateo">
@@ -29,7 +29,7 @@
               } ?>
 
         <main>
-            <h1>Desarrolladores de <span id="brand_name">MedHealth</span></h1>
+            <h1>Desarrolladores de <span id="brand_name">Cheese Maker</span></h1>
 
             <div class="developer_container">
                 <img src="src/developers/soledad.jpg">

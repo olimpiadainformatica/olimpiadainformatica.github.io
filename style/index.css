@@ -46,3 +46,49 @@ main #index_illustration{
     font-family: 'Sansation', sans-serif;
 }
 
+@media (max-width: 768px) {
+    main #index_text h1{
+        font-size: 800%;
+    }
+    
+    main #image_container{
+        width: 75%;
+    }
+    
+    #image_text{
+        font-size: 200%;
+        bottom: 15%;
+    }
+}
+
+@media (min-width: 1920px) {
+    main{
+        grid-template-rows: 1fr 2fr;
+    }
+
+    main #image_container{
+        width: 25%;
+    }
+
+    #image_text{
+        bottom: 60%;
+        font-size: 75%;
+    }
+}
+
+@media (min-width: 2560px) {
+    main #image_container{
+        width: 15%;
+    }
+
+    #image_text{
+        bottom: 70%;
+        font-size: 100%;
+    }
+}
+
+@media (min-width: 3000px) {
+    #image_text{
+        bottom: 80%;
+    }
+}
